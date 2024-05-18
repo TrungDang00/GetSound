@@ -1,0 +1,22 @@
+{
+    "name": "Catching Sound any web",
+    "description": " get",
+    "version": "0.0.1",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "popup.js"
+            ]
+        }
+    ]
+}
